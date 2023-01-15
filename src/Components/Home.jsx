@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../themeProvider';
-import { motion } from "framer-motion";
+import { motion} from 'framer-motion/dist/framer-motion'
 import Typical from "react-typical";
 
 export const Home = () => {
@@ -12,7 +12,7 @@ export const Home = () => {
           darkmode
             ? { backgroundImage: `url(${"img/light.jpg"})`, backgroundSize: "cover" }
             : { backgroundImage: `url(${"img/dark2.jpg"})`, backgroundSize: "cover" }
-        } className="md:h-scree">
+        } className="md:h-screen">
         <main className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen"
           id="/"> 
             <div className='sm:text-center lg:text-left'>
@@ -43,7 +43,7 @@ export const Home = () => {
                       <i className="fa-li fa fa-circle"></i>
                       <i className="fa-li fa fa-circle"></i>
                     </div>
-                    <code className='text-white'>Hello my name is sujal</code>
+                    <code className='text-white'>Hello my name is Sujal</code>
                     
                   </div>
             </div>

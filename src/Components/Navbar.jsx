@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'react-scroll'
 import { ThemeContext } from "../themeProvider"
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from 'framer-motion/dist/framer-motion'
 import Hamburger from "hamburger-react";
 
 export const Navbar = () => {
@@ -67,7 +67,7 @@ export const Navbar = () => {
                                     activeClass={"text-white bg-blue-500"}
                                     spy={true}
                                     className={darkmode
-                                        ?"block py-2 px-3 cursor:pointer text-black hover:bg-blue-500 hover:text-white rounded-md"
+                                        ?"block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
                                         :"block py-2 px-3 text-white hover:bg-blue-500 hover:text-black rounded-md"
                                     }
                                 >
