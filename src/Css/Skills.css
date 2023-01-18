@@ -1,0 +1,128 @@
+.skillbox {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem;
+  }
+  
+  .rBox {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .toolBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin-top: 1.5rem;;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: space-around;  
+    cursor: pointer;
+    align-items: center;
+    width: 190px;
+    height: 64px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .icon img {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .fade-left {
+    animation: fade-l 2s ease-in-out;
+  }
+  
+  .fade-down {
+    animation: fade-d 1s linear;
+  }
+  
+  .movingText {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+  }
+  
+  .runningText{
+    display:inline-block;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 84px;
+    width: max-content;
+  }
+  
+  .lang-row-l {
+    display:inline-block;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 0;
+    animation: move-left linear 12s infinite;
+    transition: unset;
+  }
+
+  .lang-row-r {
+    display:inline-block;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 0;
+    animation: move-right linear 12s infinite;
+    transition: unset;
+  }
+
+  .stack {
+    display:inline-block;
+    position: relative;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 400;
+    margin: 0 10px;
+  }
+
+  @keyframes move-left {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes move-right {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+  
+  .quote-box {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #404245;
+    font-style: italic;
+  }
+
+  .small-quote {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+  }

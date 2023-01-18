@@ -19,4 +19,5 @@ export const Tools = [
     { name: "Heroku", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" },
     { name: "Git", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" },
     { name: "Next", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" },
+    { name: "Next", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" }
   ]

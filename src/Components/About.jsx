@@ -1,42 +1,24 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from '../themeProvider';
-import Zoom from 'react-reveal/Zoom';
 
 export const About = () => {
     const theme = useContext(ThemeContext);
     const darkmode = theme.state.darkmode;
-    const animateClass = useRef();
-    
-    // useEffect(() => {
-    //     const onScroll = () => {
-    //         var len = window.pageYOffset;
-    //         if(len>500) {
-    //             animateClass.current.classList.add("fade-left");
-    //         }
-    //         else {
-    //             animateClass.current.classList.remove("fade-left");
-    //         }
-    //     };
-
-    //     window.removeEventListener('scroll', onScroll);
-    //     window.addEventListener('scroll', onScroll, { passive: true });
-    //     return () => window.removeEventListener('scroll', onScroll);
-    // }, []);
 
     return (
         <>
         <div id="about" className = { darkmode
-                ? "bg-gray-100 pt-24 md:h-screen"
-                : "bg-black pt-24 text-white md:h-screen"
+                ? "bg-gray-100 pt-24"
+                : "bg-black pt-24 text-white"
             }
         >
-            <div className="max-w-7xl px-6 mx-auto font-raleway">
+            <div className="max-w-7xl px-6 mx-auto font-raleway content-center">
                 <h1 className="text-center text-6xl">About</h1>
                 <div className="container">
                     <div className="c1">
-                        <Zoom><img src="img/sujal.jpeg" alt="Sujal"/></Zoom>
+                        <img src="img/sujal.jpeg" alt="Sujal"/>
                     </div>
-                    <div className="c2 font-semibold" ref={animateClass}>
+                    <div className="c2 font-semibold">
                         <h2 className = { darkmode 
                             ? "text-black"
                             : "text-white"
@@ -53,6 +35,7 @@ export const About = () => {
                         </p>
                     </div>
                 </div>
+                <div className='flex justify-around mt-10'><div className='vertical-line'></div></div>
             </div>
         </div>
         </>

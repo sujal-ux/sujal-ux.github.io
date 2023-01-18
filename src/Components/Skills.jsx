@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useRef } from "react";
 import { ThemeContext } from "../themeProvider";
 import { Tools } from "../data.js";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-const SkillRow = () => {
+const SkillRowl = () => {
   return (
-    <div className="lang-row">
+    <div className="lang-row-l">
       <div className="stack">HTML</div>
       <div className="stack">&#x2015;</div>
       <div className="stack">CSS</div>
@@ -25,49 +27,52 @@ const SkillRow = () => {
   );
 };
 
+const SkillRowr = () => {
+  return (
+    <div className="lang-row-r">
+      <div className="stack">Tailwind</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">Sql</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">MongoDB</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">Sass</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">Git</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">Bootstrap</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">Express</div>
+      <div className="stack">&#x2015;</div>
+      <div className="stack">Azure</div>
+      <div className="stack">&#x2015;</div>
+    </div>
+  );
+};
+
 export const Skills = () => {
   const theme = useContext(ThemeContext);
   const darkmode = theme.state.darkmode;
   const animateClass = useRef();
-  const fields = [
-    "Competitive Programming",
-    "FrontEnd Development",
-    "Backend Development",
-    "Data Structures and Algorithms",
-    "Open Source",
-  ];
-  const fieldClass = useRef();
 
-  useEffect(() => {
-    var idx = 0;
-    const setID = setInterval(() => {
-      const c_height = 68;
-      if (fieldClass.current) {
-        fieldClass.current.scrollTop = c_height * idx;
-        fieldClass.current.children[
-          (idx - 1 + fields.length) % fields.length
-        ].classList.remove("font-bold");
-        fieldClass.current.children[idx].classList.add("font-bold");
-      }
-      idx = (idx + 1) % fields.length;
-    }, 1000);
-    return () => clearInterval(setID);
-  }, []);
+  useEffect(()=>{
+    Aos.init();
+  }, [])
 
-  useEffect(() => {
-    const onScroll = () => {
-      var len = window.pageYOffset;
-      if (len > 1300) {
-        animateClass.current.classList.add("fade-down");
-      } else {
-        animateClass.current.classList.remove("fade-down");
-      }
-    };
+  // useEffect(() => {
+  //   const onScroll = () => {
+  //     var len = window.pageYOffset;
+  //     if (len > 1300) {
+  //       animateClass.current.classList.add("fade-down");
+  //     } else {
+  //       animateClass.current.classList.remove("fade-down");
+  //     }
+  //   };
 
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  //   window.removeEventListener("scroll", onScroll);
+  //   window.addEventListener("scroll", onScroll, { passive: true });
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   return (
     <>
@@ -79,29 +84,18 @@ export const Skills = () => {
             : "bg-black pt-24 text-white"
         }
       >
-        <h1 className="text-center text-6xl">Skills</h1>
-        <div className="movingText">
-          <div className="runningText-l">
-            {[...Array(10)].map((x, i) => <SkillRow key={i}/>)}
-          </div>
+        <div className="quote-box">
+            <span>&#8220;</span>It is possible to fly without motor but not without skills and knowledge<span>&#8221;</span>
+            <div className="small-quote">The grind never stops</div>
         </div>
-
+        
         <div className="skillbox">
-          <div className="lBox text-3xl text-center">
-            <h2>Fields</h2>
-            <div className="field">
-              <div className="fieldBox" ref={fieldClass}>
-                {fields.map((field, idx) => (
-                  <h3 className="text-slate-400 my-4">{field}</h3>
-                ))}
-              </div>
-            </div>
-          </div>
           <div className="rBox text-center">
             <h2 className="text-3xl">Technologies and Tools</h2>
-            <div className="toolBox" ref={animateClass}>
+            <div className="toolBox">
               {Tools.map((tool) => (
-                <div className="icon align-middle">
+                <div data-aos="slide-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" 
+                className="icon align-middle">
                   <img src={tool.link} alt="Icon" />
                   <h3 className="text-lg">{tool.name}</h3>
                 </div>
@@ -111,6 +105,18 @@ export const Skills = () => {
             </div>
           </div>
         </div>
+
+        <div className="movingText">
+          <div className="runningText">
+              {[...Array(10)].map((x, i) => <SkillRowl key={i}/>)}
+          </div>
+        </div>
+        <div className="movingText">
+          <div className="runningText">
+              {[...Array(10)].map((x, i) => <SkillRowr key={i}/>)}
+          </div>
+        </div>
+
       </div>
     </>
   );

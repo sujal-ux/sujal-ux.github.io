@@ -4,17 +4,21 @@ import { ThemeContext } from "./../../themeProvider";
 export const Intellects = () => {
     const theme = useContext(ThemeContext);
     const darkmode = theme.state.darkmode;
-
+    
     return (
         <>
-            <div className = {
-                    darkmode
-                    ? "bg-gray-100 pt-24 md:h-screen"
-                    : "bg-black pt-24 text-white md:h-screen"
-                }
-            >
-                <h1 className="text-center text-6xl">Intellects</h1>
-            </div>
+            <div className = 'int-main'>
+            <div style={{backgroundImage: `url(${"/img/stb2.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
+                <div className="int-left">
+                    <div className='hero-text'>
+                        <h1>The Intellects</h1>
+                        <h3>A website cum resource</h3>
+                    </div>
+                </div>
+                <div className="int-right">
+                    <div style={{backgroundImage: `url(${"/img/Intellects.png"})`, backgroundSize: "cover"}} className='ss'></div>
+                </div>
+                </div>
         </>
     )
 }

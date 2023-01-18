@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    width: full;
+    height: full;
+  }
+  
+  .container .c1 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .c1 img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 20rem;
+  } 
+  
+  .container .c2 {
+    width: 65%;
+    height: full;
+    padding: 0px 20px;
+    font-weight: 500;
+  }
+  
+  .c2 h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .c2 p {
+    color: #787878;
+    font-size: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .vertical-line {
+    height: 6rem;
+    width: 0.2rem;
+    background-color: grey;
+  }
+  
+  

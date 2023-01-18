@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'react-scroll'
 import { ThemeContext } from "../themeProvider"
-import { motion, AnimatePresence } from 'framer-motion/dist/framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import Hamburger from "hamburger-react";
 
 export const Navbar = () => {

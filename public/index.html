@@ -5,15 +5,42 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <script src="https://kit.fontawesome.com/8903d76a4f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8903d76a4f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <script src="bower_components/aos/dist/aos.js"></script> 
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{js,jsx,ts,tsx}"],
+        theme: {
+          extend: {
+            colors: {
+              "console-col": "#1D283A",
+            },
+            fontFamily: {
+              "lucida-console":
+                "Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace",
+              raleway: "Raleway",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
     <title>React App</title>
   </head>
   <body>

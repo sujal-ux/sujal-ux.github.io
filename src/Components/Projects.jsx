@@ -15,8 +15,8 @@ export const Projects = () => {
             <h1 className="text-center text-6xl">Projects</h1>
             
             <div className="h-box">
-                <h2 className="text-center text-4xl my-4">Experience is the best teacher</h2>
-                <h3 className="text-center text-3xl my-4">Projects are very much valuable</h3>
+                <h2 className="text-center text-2xl my-4">Experience is the best teacher</h2>
+                <h3 className="text-center text-xl my-4">Projects are very much valuable</h3>
             </div>
         </div>
         </>

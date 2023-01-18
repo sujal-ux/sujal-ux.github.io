@@ -1,0 +1,68 @@
+.h-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    vertical-align: middle;
+    height: 30vh;
+}
+
+.int-main {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.int-bg {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(49, 47, 47, 0.2));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.int-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.int-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+}
+
+.ss {
+    height: 20rem;
+    width: 36rem;
+    border-radius: 0.4rem; 
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic ;
+    text-shadow: 1px 1px 0px #564f4f;
+}
+
+.hero-text h3 {
+    font-size: 2rem;
+    font-weight: 200;
+}
