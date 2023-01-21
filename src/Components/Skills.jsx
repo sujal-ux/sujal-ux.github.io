@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../themeProvider";
 import { Tools } from "../data.js";
 import Aos from 'aos';
@@ -53,7 +53,6 @@ const SkillRowr = () => {
 export const Skills = () => {
   const theme = useContext(ThemeContext);
   const darkmode = theme.state.darkmode;
-  const animateClass = useRef();
 
   useEffect(()=>{
     Aos.init();
@@ -81,7 +80,7 @@ export const Skills = () => {
         className={
           darkmode
             ? "bg-gray-100 pt-24"
-            : "bg-black pt-24 text-white"
+            : "bg-slate-700 pt-24 text-white"
         }
       >
         <div className="quote-box">
@@ -91,10 +90,10 @@ export const Skills = () => {
         
         <div className="skillbox">
           <div className="rBox text-center">
-            <h2 className="text-3xl">Technologies and Tools</h2>
+            <h2 className="text-3xl pb-8">Technologies and Tools</h2>
             <div className="toolBox">
               {Tools.map((tool) => (
-                <div data-aos="slide-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" 
+                <div data-aos="slide-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" 
                 className="icon align-middle">
                   <img src={tool.link} alt="Icon" />
                   <h3 className="text-lg">{tool.name}</h3>

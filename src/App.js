@@ -9,11 +9,13 @@ import { ThemeProvider } from "./themeProvider";
 import { Editor } from "./Components/WorkProject/Editor";
 import { Intellects } from "./Components/WorkProject/Intellects";
 import { Hands } from "./Components/WorkProject/Hands";
+import { Footer } from "./Components/Footer";
 import "./index.css";
 import "./Css/Home.css";
 import "./Css/Skills.css";
 import "./Css/About.css";
 import "./Css/Projects.css";
+import "./Css/Footer.css";
 function App() {
   return (
     <ThemeProvider>
@@ -26,6 +28,7 @@ function App() {
       <Hands />
       <Editor />
       <Contact />
+      <Footer/>
     </ThemeProvider>
   );
 }

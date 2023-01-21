@@ -8,15 +8,13 @@ export const Projects = () => {
     return (
         <>
         <div id="projects" className = { darkmode
-                ? "bg-gray-100 pt-24"
-                : "bg-black pt-24 text-white"
+                ? "bg-gray-100 pt-14"
+                : "bg-gradient-to-b from-slate-700 to-sky-800 pt-24 text-white"
             }
         >
-            <h1 className="text-center text-6xl">Projects</h1>
-            
             <div className="h-box">
-                <h2 className="text-center text-2xl my-4">Experience is the best teacher</h2>
-                <h3 className="text-center text-xl my-4">Projects are very much valuable</h3>
+                <h1 className="p-head">Projects</h1>
+                <h2 className="main-text">Experience is the best teacher!</h2>
             </div>
         </div>
         </>
