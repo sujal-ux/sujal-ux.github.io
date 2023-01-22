@@ -11,8 +11,8 @@ export const Home = () => {
       var tmp = per.current.innerText;
       var cur = parseInt(tmp);
       cur = cur + 1;
-      per.current.innerText = cur;
-      if (cur >= 99) {
+      per.current.innerText = Math.min(cur, 100);
+      if (cur >= 100) {
         clearInterval(id);
         changeStage(3);
       }

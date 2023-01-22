@@ -1,23 +1,30 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+#contact {
+    padding-bottom: 6em;
+    background: #1c1d25;  
+}
+
 .contact-text {
     font-size: 3.5rem;
     text-align:center;
+    background: white;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 50vh;
     width: 100vw;
     background-color: #1c1d25;
 }
 
 .name-container {
+    margin-top: 2em;
     color: white;
-    font-size: 36px;
+    font-size: 3em;
     font-weight: 400;
     letter-spacing: 4px;
 }
@@ -25,6 +32,7 @@
 .copyright-section {
     color: white;
     font-size: 0.8rem;
+    margin-top: 2rem;
 }
 
 @mixin transformScale($size: 1) {
@@ -34,7 +42,7 @@
 }
 
 .social-container {
-    width: 600px;
+    width: 800px;
     text-align: center;
 }
 
@@ -48,26 +56,28 @@
     display: inline-block;
     margin: 0.15em 1em;
     position: relative;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .social-icons i {
     color: #fff;
-    position: absolute;
-    top: 21px;
-    left: 21px;
+    position: relative;
+    z-index: 1;
     transition: all 265ms ease-out;
 }
 
 .social-icons a {
-    display: inline-block;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
 }  
 
 .social-icons a:before {
     @include transformScale();
     content: "";
-    width: 60px;
-    height: 60px;
+    position: absolute;
+    inset: 0;
     border-radius: 100%;
     display: block;
     background: linear-gradient(45deg, #00B5F5, #002A8F);
