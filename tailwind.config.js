@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'console-col': '#1D283A',
+        'nav-col': '#2a3a69',
       },
       fontFamily: {
         'lucida-console': 'Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace',
