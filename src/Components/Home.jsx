@@ -27,8 +27,17 @@ export const Home = () => {
     ];
     var idx = 0,
       cur = 0,
+      delay = 0,
       ck = 0;
+
     setInterval(() => {
+      if(delay === 10) delay = 0
+
+      if(delay > 0) {
+        delay += 1
+        return
+      }
+
       if (idx === -1 && ck === 1) {
         cur = cur + 1;
         idx = 1;
@@ -38,7 +47,9 @@ export const Home = () => {
       } else if (idx === pArray[cur].length) {
         ck = 1;
         idx = idx - 1;
+        delay = 1
       }
+
       let tmpString = pArray[cur].substring(0, idx + 1);
       profile.current.innerText = tmpString;
       if (ck === 0) idx++;
@@ -65,7 +76,7 @@ export const Home = () => {
                 Hi, I am Sujal
               </motion.span>
               <span
-                className="pt-10 block text-amber-400 font-normal z-0 lg:inline"
+                className="text-amber-400 font-normal z-0 m lg:inline"
                 ref={profile}
               ></span>
             </h1>
