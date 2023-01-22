@@ -1,12 +1,9 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./../../themeProvider";
+import React from "react";
 
-export const Editor = () => {
-    const theme = useContext(ThemeContext);
-    const darkmode = theme.state.darkmode;
+export const Editor = () => {;
     return (
         <>
-            <div className = 'int-main'>
+            <div id ="projects" className = 'int-main'>
                 <div style={{backgroundImage: `url(${"/img/editor.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
                 <div className="count-text3">03</div>
                 <div className="int-container">
@@ -36,7 +33,7 @@ export const Editor = () => {
                 sports that you can enjoy in the area. The municipal government is working on this project since a long time 
                 willing to relaunch the economy and tourism of the whole territory.
                 </div>
-                <div className="website-button">
+                <div className="website-button hover:text-slate-800">
                     <a href="http://theintellects.tk/" target= "_blank">Visit Website</a>
                 </div>
             </div>

@@ -1,12 +1,9 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./../../themeProvider";
+import React from "react";
 
 export const Hands = () => {
-    const theme = useContext(ThemeContext);
-    const darkmode = theme.state.darkmode;
     return (
         <>
-            <div className = 'int-main'>
+            <div id ="projects" className = 'int-main'>
                 <div style={{backgroundImage: `url(${"/img/Handseeker.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
                 <div className="count-text2">02</div>
                 <div className="int-container">
@@ -20,7 +17,7 @@ export const Hands = () => {
                         </div>
                     </div>
                 </div>
-                <div className="desc-bottom">
+                <div className="desc-bottom"> 
                     <div className='short-text'><span className="text-rose-600">Role:</span> Frontend</div>
                     <div className='short-text'><span className="text-rose-600">Stack:</span> HTML, CSS, Javascript, React</div>
                     <div className='short-text'><span className="text-rose-600">Period:</span> March-2022 </div>
@@ -36,7 +33,7 @@ export const Hands = () => {
                 sports that you can enjoy in the area. The municipal government is working on this project since a long time 
                 willing to relaunch the economy and tourism of the whole territory.
                 </div>
-                <div className="website-button">
+                <div className="website-button hover:text-teal-800">
                     <a href="https://uberhands.netlify.app/" target= "_blank">Visit Website</a>
                 </div>
             </div>

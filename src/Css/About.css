@@ -1,4 +1,9 @@
-.container {
+  .about-box {
+    padding: 4.5rem 0 2rem 0;
+    background: linear-gradient(to bottom, #d4eaf5, #f3f4f6);
+  }
+
+  .container {
     display: flex;
     justify-content: space-between;
     margin-top: 6rem;
@@ -30,7 +35,7 @@
   }
   
   .c2 p {
-    color: #787878;
+    color: #4d4b4b;
     font-size: 20px;
     display: block;
     margin-block-start: 1em;

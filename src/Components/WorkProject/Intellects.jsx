@@ -1,13 +1,10 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./../../themeProvider";
+import React from "react";
 
 export const Intellects = () => {
-    const theme = useContext(ThemeContext);
-    const darkmode = theme.state.darkmode;
     
     return (
         <>
-            <div className = 'int-main'>
+            <div id ="projects" className = 'int-main'>
                 <div style={{backgroundImage: `url(${"/img/stb2.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
                 <div className="count-text">01</div>
                 <div className="int-container">
@@ -37,7 +34,7 @@ export const Intellects = () => {
                 sports that you can enjoy in the area. The municipal government is working on this project since a long time 
                 willing to relaunch the economy and tourism of the whole territory.
                 </div>
-                <div className="website-button">
+                <div className="website-button hover:text-sky-700">
                     <a href="http://theintellects.tk/" target= "_blank">Visit Website</a>
                 </div>
             </div>

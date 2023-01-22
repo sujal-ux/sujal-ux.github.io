@@ -1,5 +1,4 @@
-import React, { useContext, useEffect } from "react";
-import { ThemeContext } from "../themeProvider";
+import React, { useEffect } from "react";
 import { Tools } from "../data.js";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -51,38 +50,14 @@ const SkillRowr = () => {
 };
 
 export const Skills = () => {
-  const theme = useContext(ThemeContext);
-  const darkmode = theme.state.darkmode;
 
   useEffect(()=>{
     Aos.init();
   }, [])
 
-  // useEffect(() => {
-  //   const onScroll = () => {
-  //     var len = window.pageYOffset;
-  //     if (len > 1300) {
-  //       animateClass.current.classList.add("fade-down");
-  //     } else {
-  //       animateClass.current.classList.remove("fade-down");
-  //     }
-  //   };
-
-  //   window.removeEventListener("scroll", onScroll);
-  //   window.addEventListener("scroll", onScroll, { passive: true });
-  //   return () => window.removeEventListener("scroll", onScroll);
-  // }, []);
-
   return (
     <>
-      <div
-        id="skills"
-        className={
-          darkmode
-            ? "bg-gray-100 pt-24"
-            : "bg-slate-700 pt-24 text-white"
-        }
-      >
+      <div id="skills" className="bg-gray-100 pt-14">
         <div className="quote-box">
             <span>&#8220;</span>It is possible to fly without motor but not without skills and knowledge<span>&#8221;</span>
             <div className="small-quote">The grind never stops</div>
