@@ -87,3 +87,31 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 1;
   }
 }
+
+.navbar-box {
+  background-color: #003675;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  z-index: 50;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  font-family: Raleway;
+  transition: top 600ms;
+}
+
+.navbar-hidden {
+  top: -72px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 8px 0;
+}
+
+.active-nav {
+  background-color: #3B82F6;
+  color: white !important;
+}

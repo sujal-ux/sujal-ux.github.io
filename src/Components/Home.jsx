@@ -22,7 +22,7 @@ export const Home = () => {
   useEffect(() => {
     const pArray = [
       "Software Engineer",
-      "Competitive Programmer",
+      "Problem Solver",
       "Web Developer",
     ];
     var idx = 0,
@@ -61,7 +61,7 @@ export const Home = () => {
     <>
       <div className="home-page md:h-screen">
         <main
-          className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen"
+          className="home-content"
           id="/"
         >
           <div
@@ -70,21 +70,19 @@ export const Home = () => {
             }}
             className="home-page-bg"
           ></div>
-          <div className="sm:text-center lg:text-left">
-            <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
+          <div className="home-left">
+            <h1 className="tracking-tight font-extrabold">
               <motion.span className="block text-white">
                 Hi, I am Sujal
               </motion.span>
               <span
-                className="text-amber-400 font-normal z-0 m lg:inline"
+                className="profile-text"
                 ref={profile}
               ></span>
             </h1>
-            <button className="button-85" role="button">
-              My Resume
-            </button>
+            <button className="button-85"><a href="#popup1">My Resume</a></button>
           </div>
-          <div className="sm: text-center lg:text-right">
+          <div className="home-right">
             <div className="console-box">
               <div className="console-head">
                 <i className="console-head-dot"></i>
@@ -133,6 +131,11 @@ export const Home = () => {
                   <div></div>
                 )}
               </div>
+            </div>
+          </div>
+          <div id="popup1" className="overlay">
+            <div className="pop-up">
+              <h1>Hello</h1>
             </div>
           </div>
         </main>

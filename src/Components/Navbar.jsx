@@ -89,7 +89,7 @@ export const Navbar = () => {
             initial={{ x: 100 }}
             animate={{ x: 0, transition: { type: "spring" } }}
             exit={{ x: 200, transition: { type: "spring" } }}
-            className="bg-white py-2 px-2 md:p-0 z-50 fixed top-16 mt-2 rounded-lg shadow-lg right-2 block w-40"
+            className="bg-white py-2 px-2 md:p-0 z-80 fixed top-16 mt-2 rounded-lg shadow-lg right-2 block w-40"
           >
             <ul className="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
               {links.map((el) => (
