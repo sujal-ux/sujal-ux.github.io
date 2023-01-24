@@ -131,7 +131,7 @@
     font-weight: 500;
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .skill-page {
     display: flex;
     flex-direction: column;

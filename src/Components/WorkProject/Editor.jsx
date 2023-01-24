@@ -29,9 +29,9 @@ export const Editor = () => {;
                     <h3>An online SQL Editor</h3>
                 </div>
                 <div className = "desc">
-                Sportland aims to promote the economy and tourism in the foothills and the High Friuli thanks to the multiple 
-                sports that you can enjoy in the area. The municipal government is working on this project since a long time 
-                willing to relaunch the economy and tourism of the whole territory.
+                AtSql is a prototype of an online SQL Editor where people can write their SQL queries and run them to obtain output. 
+                User can utilise multiple tabs at the same time to run more than one query at a time. Auto fill of queries is also 
+                provided to enhance user experience. 
                 </div>
                 <div className="website-button hover:text-slate-800">
                     <a href="https://editorsql.netlify.app/" target= "_blank">Visit Website</a>

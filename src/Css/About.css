@@ -19,7 +19,7 @@
   
   .container .c1 img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 20rem;
+    height: 22rem;
   } 
   
   .container .c2 {
@@ -50,7 +50,7 @@
     background-color: grey;
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .about-box {
       padding: 3rem 0 2rem 0;
     } 
@@ -62,16 +62,18 @@
     .container .c1, .container .c2 {
       width: 100%;
       align-items: center;
-      text-align: justify;
+      text-align: center;
     }
     .container h2 {
       text-align: center;
-      font-size: 2.0rem;
+      font-size: 2.2rem;
       margin-top: 2rem;
     }
+    
     .container .c2 p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
+    
     .vertical-line {
       height: 0.2rem;
       width: 6rem;

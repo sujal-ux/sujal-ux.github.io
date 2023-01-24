@@ -44,9 +44,8 @@ export const Hands = () => {
                     <h3>A Frontend Platform</h3>
                 </div>
                 <div className = "desc">
-                Sportland aims to promote the economy and tourism in the foothills and the High Friuli thanks to the multiple 
-                sports that you can enjoy in the area. The municipal government is working on this project since a long time 
-                willing to relaunch the economy and tourism of the whole territory.
+                Its a frontend platform realising two types of functionalities, where the user can hire a helping hand for their daily works
+                and also search for flexible part time work to earn their daily expenses. It has been developed in React using CSS for design.
                 </div>
                 <div className="website-button hover:text-teal-800">
                     <a href="https://uberhands.netlify.app/" target= "_blank">Visit Website</a>

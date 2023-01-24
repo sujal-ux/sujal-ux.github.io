@@ -99,7 +99,12 @@
     transition: all 256ms ease-in;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+    #contact {
+        padding-bottom: 4em;
+        background: #1c1d25;  
+    }
+
     .contact-text {
         font-size: 1.8rem;
         text-align: center;

@@ -20,7 +20,7 @@ export const Intellects = () => {
                 </div>
                 <div className="desc-bottom">
                     <div className='short-text'><span className="text-orange-400">Role:</span> Frontend-Backend</div>
-                    <div className='short-text'><span className="text-orange-400">Stack:</span> JavaScript, Nodejs, Express, MongoDB</div>
+                    <div className='short-text'><span className="text-orange-400">Stack:</span> HTML, CSS, JavaScript, Nodejs, Express </div>
                     <div className='short-text'><span className="text-orange-400">Period:</span> Sept, 2020</div>
                 </div>
             </div>
@@ -30,9 +30,10 @@ export const Intellects = () => {
                     <h3>A website cum resource</h3>
                 </div>
                 <div className = "desc">
-                Sportland aims to promote the economy and tourism in the foothills and the High Friuli thanks to the multiple 
-                sports that you can enjoy in the area. The municipal government is working on this project since a long time 
-                willing to relaunch the economy and tourism of the whole territory.
+                Intellects aims to make college life easy by providing three utilities called Connect, Online Library and a Blog Page.
+                College students can use connect page to know about each other applying filters for state, department, year, etc. They can 
+                also use online library to obtain notes, online books and PYQs. A fancy blog page (Simply The Best) to share your ideas beautifying it with the help of Markdown. 
+                Click below button to navigate through Intellects. 
                 </div>
                 <div className="website-button hover:text-sky-700">
                     <a href="http://theintellects.tk/" target= "_blank">Visit Website</a>
