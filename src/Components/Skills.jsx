@@ -57,21 +57,21 @@ export const Skills = () => {
 
   return (
     <>
-      <div id="skills" className="bg-gray-100 pt-14">
+      <div id="skills" className="skill-page">
         <div className="quote-box">
-            <span>&#8220;</span>It is possible to fly without motor but not without skills and knowledge<span>&#8221;</span>
-            <div className="small-quote">The grind never stops</div>
+            <span><span>&#8220;</span>It is possible to fly without motor but not without skills and knowledge<span>&#8221;</span></span>
+            <div className="small-quote pt-4">The grind never stops</div>
         </div>
         
         <div className="skillbox">
           <div className="rBox text-center">
-            <h2 className="text-3xl pb-8">Technologies and Tools</h2>
+            <h2 className="m:text-3xl text-4xl pb-8">Technologies and Tools</h2>
             <div className="toolBox">
               {Tools.map((tool) => (
                 <div data-aos="slide-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" 
                 className="icon align-middle">
                   <img src={tool.link} alt="Icon" />
-                  <h3 className="text-lg">{tool.name}</h3>
+                  <h3 className="m:text-lg">{tool.name}</h3>
                 </div>
               ))}
 
@@ -80,7 +80,7 @@ export const Skills = () => {
           </div>
         </div>
 
-        <div className="movingText">
+        <div className="mt-100 m:mt-0 movingText">
           <div className="runningText">
               {[...Array(10)].map((x, i) => <SkillRowl key={i}/>)}
           </div>

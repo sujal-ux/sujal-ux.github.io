@@ -14,7 +14,7 @@ export const Editor = () => {;
                         </div>
                     </div>
                     <div className="int-right">
-                        <div style={{backgroundImage: `url(${"/img/editor.png"})`, backgroundSize: "cover"}} className='ss'></div>
+                        <div style={{backgroundImage: `url(${"/img/editor2.png"})`, backgroundSize: "cover"}} className='ss'></div>
                     </div>
                 </div>
                 <div className="desc-bottom">
@@ -34,7 +34,7 @@ export const Editor = () => {;
                 willing to relaunch the economy and tourism of the whole territory.
                 </div>
                 <div className="website-button hover:text-slate-800">
-                    <a href="http://theintellects.tk/" target= "_blank">Visit Website</a>
+                    <a href="https://editorsql.netlify.app/" target= "_blank">Visit Website</a>
                 </div>
             </div>
         </>

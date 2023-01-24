@@ -1,8 +1,13 @@
+  .skill-page {
+    background-color: #F3F4F6;
+    padding-top: 56px;
+  }
+  
   .skillbox {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 80vh;
+    height: auto;
     padding: 2rem;
   }
   
@@ -55,7 +60,7 @@
     line-height: 50px;
   }
   
-  .runningText{
+  .runningText {
     display:inline-block;
     position: absolute;
     right: 0;
@@ -125,3 +130,40 @@
     color: black;
     font-weight: 500;
   }
+
+@media only screen and (max-width: 600px) {
+  .skill-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quote-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    padding: 0 1rem; 
+  }
+  .skillbox {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  .rBox {
+    width: 100%;
+  }
+  .toolBox {
+    padding: 10px 0px 10px 0px;
+  }
+  .icon {
+    width: 150px;
+    height: 50px;
+    font-size: 0.8rem;
+    padding: 10px 4px;
+  }
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .stack {
+    font-size: 30px;
+  }
+}

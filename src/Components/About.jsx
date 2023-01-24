@@ -6,7 +6,7 @@ export const About = () => {
         <>
         <div id="about" className = "about-box">
             <div className="max-w-7xl px-6 mx-auto font-raleway content-center">
-                <h1 className="text-center text-6xl tracking-widest">About</h1>
+                <h1 className="text-center text-5xl md:text-6xl tracking-widest">About</h1>
                 <div className="container">
                     <div className="c1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                         <img src="img/sujal.jpeg" alt="Sujal"/>

@@ -5,7 +5,7 @@ export const Intellects = () => {
     return (
         <>
             <div id ="projects" className = 'int-main'>
-                <div style={{backgroundImage: `url(${"/img/stb2.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
+                <div style={{backgroundImage: `url(${"/img/stb3.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
                 <div className="count-text">01</div>
                 <div className="int-container">
                     <div className="int-left">
@@ -21,11 +21,11 @@ export const Intellects = () => {
                 <div className="desc-bottom">
                     <div className='short-text'><span className="text-orange-400">Role:</span> Frontend-Backend</div>
                     <div className='short-text'><span className="text-orange-400">Stack:</span> JavaScript, Nodejs, Express, MongoDB</div>
-                    <div className='short-text'><span className="text-orange-400">Period:</span> Aug, 2020 - Oct-2020</div>
+                    <div className='short-text'><span className="text-orange-400">Period:</span> Sept, 2020</div>
                 </div>
             </div>
             <div className = "project-desc1">
-                <div className = "hero-text">
+                <div className = "hero-text font-light md:font-bold">
                     <h1>The Intellects</h1>
                     <h3>A website cum resource</h3>
                 </div>

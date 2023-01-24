@@ -70,17 +70,24 @@ export const Home = () => {
             }}
             className="home-page-bg"
           ></div>
-          <div className="home-left">
-            <h1 className="tracking-tight font-extrabold">
-              <motion.span className="block text-white">
+          <div className="home-left"> 
+            <div className="font-extrabold tracking-tight">
+              <motion.div className="block text-white leading-7">
                 Hi, I am Sujal
-              </motion.span>
-              <span
+              </motion.div>
+              <div
                 className="profile-text"
                 ref={profile}
-              ></span>
-            </h1>
-            <button className="button-85"><a href="#popup1">My Resume</a></button>
+              ></div>
+            </div>
+            <p className="home-text">
+            I am a Web Developer / Competitive Programmer, currently in final year of my B.Tech. with Computer Science at IIEST, Shibpur.
+            </p>
+            <button className="button-85">
+              <a href="https://drive.google.com/file/d/1yxxBdVyxiJJPsTy88tr27GLivMtGQAJI/view?usp=sharing" target="blank">
+                My Resume
+              </a>
+            </button>
           </div>
           <div className="home-right">
             <div className="console-box">
@@ -124,18 +131,13 @@ export const Home = () => {
                   <div className="console-body-row" id="3">
                     <i className="text-blue-200">#</i>
                     <div className="console-body-text text-blue-200">
-                      try: npm install -g @hardwork.js
+                      try: npm install @hardwork.js
                     </div>
                   </div>
                 ) : (
                   <div></div>
                 )}
               </div>
-            </div>
-          </div>
-          <div id="popup1" className="overlay">
-            <div className="pop-up">
-              <h1>Hello</h1>
             </div>
           </div>
         </main>

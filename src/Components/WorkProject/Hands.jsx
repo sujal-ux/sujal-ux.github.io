@@ -7,7 +7,8 @@ export const Hands = () => {
                 <div style={{backgroundImage: `url(${"/img/Handseeker.png"})`, backgroundSize: "cover"}} className="int-bg"></div>
                 <div className="count-text2">02</div>
                 <div className="int-container">
-                    <div className="int-right">
+                {(window.innerWidth > 600) ? 
+                    (<><div className="int-right">
                     <div style={{backgroundImage: `url(${"/img/Handshelper.png"})`, backgroundSize: "cover"}} className='ss'></div>
                     </div>
                     <div className="int-left">
@@ -15,7 +16,21 @@ export const Hands = () => {
                             <h1>Hands</h1>
                             <h3>Frontend Platform</h3>
                         </div>
-                    </div>
+                    </div></> ):
+                    (
+                        <>
+                        <div className="int-left">
+                            <div className='hero-text'>
+                                <h1>Hands</h1>
+                                <h3>Frontend Platform</h3>
+                            </div>
+                        </div>
+                        <div className="int-right">
+                        <div style={{backgroundImage: `url(${"/img/Handshelper.png"})`, backgroundSize: "cover"}} className='ss'></div>
+                        </div>
+                        </>
+                    )
+                }
                 </div>
                 <div className="desc-bottom"> 
                     <div className='short-text'><span className="text-rose-600">Role:</span> Frontend</div>

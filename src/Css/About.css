@@ -49,5 +49,33 @@
     width: 0.2rem;
     background-color: grey;
   }
+
+@media only screen and (max-width: 600px) {
+    .about-box {
+      padding: 3rem 0 2rem 0;
+    } 
+    .container {
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 4rem;;
+    }
+    .container .c1, .container .c2 {
+      width: 100%;
+      align-items: center;
+      text-align: justify;
+    }
+    .container h2 {
+      text-align: center;
+      font-size: 2.0rem;
+      margin-top: 2rem;
+    }
+    .container .c2 p {
+      font-size: 1.2rem;
+    }
+    .vertical-line {
+      height: 0.2rem;
+      width: 6rem;
+    }
+}
   
   

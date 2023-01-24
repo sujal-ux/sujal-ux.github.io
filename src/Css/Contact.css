@@ -7,7 +7,7 @@
 
 .contact-text {
     font-size: 3.5rem;
-    text-align:center;
+    text-align: center;
     background: white;
 }
 
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
     background-color: #1c1d25;
 }
@@ -27,6 +27,7 @@
     font-size: 3em;
     font-weight: 400;
     letter-spacing: 4px;
+    text-align: center;
 }
 
 .copyright-section {
@@ -96,4 +97,44 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 256ms ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-text {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .footer-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .name-container {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .social-container {
+        width: 100%;
+    }
+
+    .social-icons {
+        margin: 1em 0em;
+    }
+
+    .social-icons a {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+    }  
+
+    .social-icons li {
+        display: inline-block;
+        margin: 0.15em 0.6em;
+        position: relative;
+        font-size: 1em;
+    }
 }
