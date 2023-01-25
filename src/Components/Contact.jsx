@@ -11,8 +11,9 @@ export const Contact = () => {
         <div id="contact" className = "bg-gray-100 flex flex-col items-center">
             <div className="contact-text p-10 md:p-24">
                 <div data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="600">
-                <h1>Interested to know more? <a className="text-sky-700" href="mailto:sumo12082000@gmail.com">Contact</a> on the below links or <a href="https://api.whatsapp.com/send/?phone=%2B916376781013&text&type=phone_number&app_absent=0" target="_blank"> 
-                <span className="text-green-400">whatsapp me -{'>'}</span></a></h1>
+                <h1>Interested to know more? <a className="text-sky-700" href="mailto:sumo12082000@gmail.com">Contact</a> on the below 
+                links or <a className="text-green-400" href="https://api.whatsapp.com/send/?phone=%2B916376781013&text&type=phone_number&app_absent=0" target="blank"> 
+                <span className="underline underline-offset-8">whatsapp</span> me -{'>'}</a></h1>
                 </div>
             </div>
             <div className="footer-container">

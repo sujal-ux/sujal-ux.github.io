@@ -167,3 +167,10 @@
     font-size: 30px;
   }
 }
+
+@media only screen and (max-width: 370px) {
+  .icon {
+    scale: 0.9;
+    margin: 10px 4px;
+  }
+}

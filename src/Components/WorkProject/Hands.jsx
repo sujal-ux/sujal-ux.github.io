@@ -33,9 +33,9 @@ export const Hands = () => {
                 }
                 </div>
                 <div className="desc-bottom"> 
-                    <div className='short-text'><span className="text-rose-600">Role:</span> Frontend</div>
-                    <div className='short-text'><span className="text-rose-600">Stack:</span> HTML, CSS, Javascript, React</div>
-                    <div className='short-text'><span className="text-rose-600">Period:</span> March-2022 </div>
+                    <div className='short-text'><span className="text-hands-col">Role:</span> Frontend</div>
+                    <div className='short-text'><span className="text-hands-col">Stack:</span> HTML, CSS, Javascript, React</div>
+                    <div className='short-text'><span className="text-hands-col">Period:</span> March-2022 </div>
                 </div>
             </div>
             <div className = "project-desc2">

@@ -81,7 +81,7 @@ export const Home = () => {
               ></div>
             </div>
             <p className="home-text">
-            I am a Web Developer / Competitive Programmer, currently in final year of my B.Tech. with Computer Science at IIEST, Shibpur.
+            I am a Web Developer / Competitive Programmer, currently in final year of my B.Tech with Computer Science at IIEST, Shibpur.
             </p>
             <button className="button-85">
               <a href="https://drive.google.com/file/d/1yxxBdVyxiJJPsTy88tr27GLivMtGQAJI/view?usp=sharing" target="blank">

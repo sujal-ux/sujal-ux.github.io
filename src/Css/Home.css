@@ -191,3 +191,9 @@ code {
     font-size: 1.2rem;
   }
 }
+
+@media only screen and (max-width: 370px) {
+  .console-box {
+    scale: 0.9;
+  }
+}
