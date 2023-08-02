@@ -17,10 +17,10 @@ export const About = () => {
                         </h2>
                         <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                             <p> 
-                                Hey! I'm Sujal Modanwal, 22 years old. I am a self taught Web Developer who is also passionate about 
+                                Hey! I'm Sujal Modanwal, 23 years old. I am a self taught Software Engineer and Web Developer who is also passionate about 
                                 Competitive Programming and Data Structures and Algorithms. I have been developing websites since two 
                                 years. I have also solved 2000+ problems in competitive platforms, being Expert and 5 star at Codeforces 
-                                and Codechef respectively.  
+                                and Codechef respectively.
                             </p>
                             <p>    
                                 I have good code habits, pursue the clear structure, and strong logic. Moreover, I'm quick thinking, 
