@@ -81,10 +81,10 @@ export const Home = () => {
               ></div>
             </div>
             <p className="home-text">
-            I am a Software Engineer / Web Developer , currently a full time employee at Deutsche Bank.
+            I am a passionate Software Engineer, currently working as a full time employee at Deutsche Bank.
             </p>
             <button className="button-85">
-              <a href="https://drive.google.com/file/d/1E_hktNOSjauNHaAf-3EKrqVptbWD1H3l/view?usp=sharing" target="blank">
+              <a href="https://drive.google.com/file/d/1ymHYuFhujQTfqadO37SLAkW9d9j-IDdj/view?usp=sharing" target="blank">
                 My Resume
               </a>
             </button>

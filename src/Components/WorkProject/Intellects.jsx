@@ -36,7 +36,7 @@ export const Intellects = () => {
                 Click below button to navigate through Intellects. 
                 </div>
                 <div className="website-button hover:text-sky-700">
-                    <a href="http://theintellects.tk/" target= "_blank">Visit Website</a>
+                    <a href="https://github.com/SuMRoG/The-Intellects" target= "_blank">Visit Source</a>
                 </div>
             </div>
         </>
