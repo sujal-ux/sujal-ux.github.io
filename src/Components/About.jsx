@@ -9,7 +9,7 @@ export const About = () => {
                 <h1 className="text-center text-5xl md:text-6xl tracking-wider">About</h1>
                 <div className="container">
                     <div className="c1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                        <img src="img/sujal2.jpeg" alt="Sujal"/>
+                        <img src="img/sujal.jpeg" alt="Sujal"/>
                     </div>
                     <div className="c2 font-semibold">
                         <h2 className="tracking-wider" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
