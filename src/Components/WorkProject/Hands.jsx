@@ -48,7 +48,7 @@ export const Hands = () => {
                 and also search for flexible part time work to earn their daily expenses. It has been developed in React using CSS for design.
                 </div>
                 <div className="website-button hover:text-teal-800">
-                    <a href="https://uberhands.netlify.app/" target= "_blank">Visit Website</a>
+                    <a href="https://uberhands.netlify.app/" rel="noreferrer" target= "_blank">Visit Website</a>
                 </div>
             </div>
         </>

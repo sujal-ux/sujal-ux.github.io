@@ -34,7 +34,7 @@ export const Editor = () => {;
                 provided to enhance user experience. 
                 </div>
                 <div className="website-button hover:text-slate-800">
-                    <a href="https://editorsql.netlify.app/" target= "_blank">Visit Website</a>
+                    <a href="https://editorsql.netlify.app/" target= "_blank" rel="noreferrer">Visit Website</a>
                 </div>
             </div>
         </>
