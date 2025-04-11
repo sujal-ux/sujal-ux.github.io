@@ -13,7 +13,7 @@ export const Hands = () => {
                     </div>
                     <div className="int-left">
                         <div className='hero-text'>
-                            <h1>Hands</h1>
+                            <h1>Dolet</h1>
                             <h3>Frontend Platform</h3>
                         </div>
                     </div></> ):
@@ -21,7 +21,7 @@ export const Hands = () => {
                         <>
                         <div className="int-left">
                             <div className='hero-text'>
-                                <h1>Hands</h1>
+                                <h1>Dolet</h1>
                                 <h3>Frontend Platform</h3>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export const Hands = () => {
             </div>
             <div className = "project-desc2">
                 <div className = "hero-text">
-                    <h1>The Hands</h1>
+                    <h1>The Dolet</h1>
                     <h3>A Frontend Platform</h3>
                 </div>
                 <div className = "desc">
@@ -48,7 +48,7 @@ export const Hands = () => {
                 and also search for flexible part time work to earn their daily expenses. It has been developed in React using CSS for design.
                 </div>
                 <div className="website-button hover:text-teal-800">
-                    <a href="https://uberhands.netlify.app/" rel="noreferrer" target= "_blank">Visit Website</a>
+                    <a href="https://dolet-app.netlify.app/" rel="noreferrer" target= "_blank">Visit Website</a>
                 </div>
             </div>
         </>
